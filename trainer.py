@@ -5,15 +5,7 @@ from itertools import count
 
 def fit(train_loader, val_loader, model, loss_fn, optimizer, scheduler, n_epochs, cuda, log_interval, nb_patch, margin, metrics=[], 
         start_epoch=0):
-    """
-    Loaders, model, loss function and metrics should work together for a given task,
-    i.e. The model should be able to process data output of loaders,
-    loss function should process target output of loaders and outputs from the model
-
-    Examples: Classification: batch loader, classification model, NLL loss, accuracy metric
-    Siamese network: Siamese loader, siamese model, contrastive loss
-    Online triplet learning: batch loader, embedding model, online triplet loss
-    """
+        
     for epoch in range(0, start_epoch):
         scheduler.step()
     tr_loss, vl_loss, acc_train, acc_val = [], [], [], []
