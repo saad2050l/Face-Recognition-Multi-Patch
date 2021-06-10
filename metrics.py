@@ -19,9 +19,9 @@ class Metric:
         raise NotImplementedError
 
 
-class AccumulatedAccuracyMetric(Metric):
+class TripletMetric(Metric):
     """
-    Works with classification model
+    Metric for the models with the Triplet Loss
     """
 
     def __init__(self):
@@ -48,7 +48,7 @@ class AccumulatedAccuracyMetric(Metric):
 
 class ContrastiveMetric(Metric):
     """
-    Works with classification model
+    Metric for the models with the Siamese Loss
     """
 
     def __init__(self):
@@ -71,25 +71,3 @@ class ContrastiveMetric(Metric):
 
     def name(self):
         return 'Accuracy'
-
-
-class AverageNonzeroTripletsMetric(Metric):
-    '''
-    Counts average number of nonzero triplets found in minibatches
-    '''
-
-    def __init__(self):
-        self.values = []
-
-    def __call__(self, outputs, target, loss):
-        self.values.append(loss[1])
-        return self.value()
-
-    def reset(self):
-        self.values = []
-
-    def value(self):
-        return np.mean(self.values)
-
-    def name(self):
-        return 'Average nonzero triplets'

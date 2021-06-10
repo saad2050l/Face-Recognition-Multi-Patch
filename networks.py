@@ -6,7 +6,8 @@ class MultiPatch(nn.Module):
     def __init__(self):
         super(MultiPatch, self).__init__()
 
-        self.convnet3 = nn.Sequential(nn.Conv2d(3, 64, kernel_size=5, padding=2),
+        self.convnet3 = nn.Sequential(
+            nn.Conv2d(3, 64, kernel_size=5, padding=2),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(2, stride=2),
 
@@ -22,7 +23,8 @@ class MultiPatch(nn.Module):
             nn.ReLU(inplace=True)
             )
         
-        self.convnet1 = nn.Sequential(nn.Conv2d(1, 64, kernel_size=5, padding=2),
+        self.convnet1 = nn.Sequential(
+            nn.Conv2d(1, 64, kernel_size=5, padding=2),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(2, stride=2),
 
