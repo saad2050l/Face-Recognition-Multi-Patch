@@ -17,8 +17,8 @@
  In this project, our main objective is to implement the method that was implemented in the article [Targeting Ultimate Accuracy Face Recognition by Liu & al.](https://arxiv.org/ftp/arxiv/papers/1506/1506.07310.pdf). In addition to the implementation of the method, our goal is also to understand the specifics of the article since many details were left out.
 
 # Article
-[Targeting Ultimate Accuracy Face Recognition by Liu & al.](https://arxiv.org/ftp/arxiv/papers/1506/1506.07310.pdf)
-To start with the analysis of the article, we could see that it contais two steps: the Triplet-Loss and the Multi-patch.<br />
+[Targeting Ultimate Accuracy Face Recognition by Liu & al.](https://arxiv.org/ftp/arxiv/papers/1506/1506.07310.pdf)<br />
+To start with the analysis of the article, the method develops two specific tools : the Triplet-Loss and the Multi-patch.<br />
 The Multi-Patch is a method used for face recognition. The principle is simple, we do not only provide the whole face to the CNN input, but also some part of the face based on landmarks. For example, we can take at the same time as the face in input the eyes only or the mouth, as illustrated below.<br />
 |![ima patch](./images/multi_patch.png)|
 |:--:|
