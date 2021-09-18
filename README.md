@@ -27,6 +27,7 @@ The second step of the method was the implementation of the Triplet loss. Indeed
 <br />
 Unlike Siamese, the Triplet loss, as its name indicates, takes three images as input, the anchor, the positive image and the negative image. The principle of Triplet loss is to have a distance between the anchor and the negative image greater than the distance between the anchor and the positive image plus a margin. The margin is there to compensate for images of the same person but with a different brightness or an older age.<br />
 The Triplet loss thus takes in input three images with their patches, put them in input of three neural networks with shared weights as represented on the figure below.
+
 |![triplt](./images/triplt.png)|
 |:--:|
 |[Triplet Loss (Source: Wikimedia)](https://commons.wikimedia.org/wiki/File:Triplet_loss.png)|
@@ -85,8 +86,8 @@ Now that the pre-processing of the data is done and that we have it in the desir
 
 
 # Author 
-Steve SUARD, Student at Telecom SudParis, Institut Polytechnique de Paris.
-[Saad LAHLALI](https://www.linkedin.com/in/saad-lahlali/), Student at Telecom SudParis, Institut Polytechnique de Paris.<br />
+Steve SUARD, Student at Telecom SudParis, Institut Polytechnique de Paris.<br />
+[Saad LAHLALI](https://www.linkedin.com/in/saad-lahlali/), Student at Telecom SudParis, Institut Polytechnique de Paris.
 
 # Note about this project
 This work was done for a school project in first year of master.
