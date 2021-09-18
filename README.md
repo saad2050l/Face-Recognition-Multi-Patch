@@ -15,6 +15,12 @@ The Multi-Patch is a method used for face recognition. The principle is simple, 
 |![ima patch](./images/multi_patch.png)|<br />
 |:--:|
 |*Overview of deep CNN structure on multi-patch*|
+<br />
+
+|![ima patcsh](./images/multi_patch.png) |
+|:--:|
+| *Embeddings of the MNIST test images visualized with T-SNE (perplexity 25)* |
+
 Then each part of the face thus selected passes through a network of nine CNNs. The result obtained in each CNN is then concatenated to have a single unidimensional vector at the output of the Multi-patch.<br />
 
 The second step of the method was the implementation of the Triplet loss. Indeed, for face recognition there are several possible loss functions better than the classical Categorical-Crossentropy. The principle of the Siamese loss is simple, rather than giving in input to the neural network a single image, we give in input an image and another image of the same person that we will name positive image and the image with an image of another person that we will name negative image. The aim of the loss function is to reduce the distance between the anchor and the positive image and to increase the distance between the anchor and the negative image. <br />
