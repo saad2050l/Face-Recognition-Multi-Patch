@@ -1,8 +1,15 @@
 # MultiPatch Face Recognition
 
 - [Description](#description)
-
-- [Author and Advisor](#author-and-advisor)
+- [Article](#article)
+- [Objectives](#objectives)
+- [Experiments](#experiments)
+  - [Data Description](#data-description)
+  - [Patchs](#patchs)
+  - [Generating Triplets](#generating-triplets)
+  - [The CNN architecture chosen ](#the-cnn-architecture-chosen)
+- [Results](#results)
+- [Authors](#authors)
 - [Note about this project](#note-about-this-project)
 
 # Description
@@ -85,7 +92,7 @@ Now that the pre-processing of the data is done and that we have it in the desir
 |:--:|
 
 
-# Author 
+# Authors
 Steve SUARD, Student at Telecom SudParis, Institut Polytechnique de Paris.<br />
 [Saad LAHLALI](https://www.linkedin.com/in/saad-lahlali/), Student at Telecom SudParis, Institut Polytechnique de Paris.
 
