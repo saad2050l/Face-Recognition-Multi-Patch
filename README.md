@@ -65,22 +65,22 @@ However, there is a drawback to this approach. For the faces where one of the pa
 
 ## Generating Triplets
 Once we had our patches, we started to make our triplet for our CNN. We grouped as agreed an anchor, a positive image and a negative image.
-|![triplets](./images/triplets.png)|<br />
+|![triplets](./images/triplets.png)|
 |:--:|
 |Examples of triplets of patchs|
 
 ## The CNN architecture chosen 
 Now that the pre-processing of the data is done and that we have it in the desired format, it was time to realize the neural networks. We first tried to implement as in the article a neural network containing nine CNN layers at first but then decreased that number to four.
-|![nn](./images/nn.png)|<br />
+|![nn](./images/nn.png)|
 |:--:|
 |CNN architecture|
 
 # Results
 
-|![triplet_res](./images/res_triplet.png)|<br />
+|![triplet_res](./images/res_triplet.png)|
 |:--:|
 
-|![Siamese_res](./images/res_siamese.png)|<br />
+|![Siamese_res](./images/res_siamese.png)|
 |:--:|
 
 
