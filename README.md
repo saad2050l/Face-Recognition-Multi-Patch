@@ -9,6 +9,7 @@
   - [Generating Triplets](#generating-triplets)
   - [The CNN architecture chosen ](#the-cnn-architecture-chosen)
 - [Results](#results)
+- [Conclusion](#conclusion)
 - [Authors](#authors)
 - [Note about this project](#note-about-this-project)
 
@@ -91,6 +92,10 @@ Now that the pre-processing of the data is done and that we have it in the desir
 |![Siamese_res](./images/res_siamese.png)|
 |:--:|
 
+# Conclusion
+In this project, we propose a personal implementation of the article [Targeting Ultimate Accuracy Face Recognition by Liu & al.](https://arxiv.org/ftp/arxiv/papers/1506/1506.07310.pdf). 
+
+After our experiments, we can conclude that the more patchs are used, the greater the results. Also, just as it can be seen in normal methods (without multipatch), this method also performs much better with triplet loss than with siamese loss.
 
 # Authors
 Steve SUARD, Student at Telecom SudParis, Institut Polytechnique de Paris.<br />
